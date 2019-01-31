@@ -6,7 +6,7 @@ Chris Bistline
 
 ## Technology
 CSS3, HTML5
-* Live site: https://csbistline.github.io/Basic-Portfolio/
+* Live site: https://csbistline.github.io/Responsive-Portfolio/
 
 ## About
 * Responsive Portfolio is the second class homework assignment for the Vanderbilt Coding Bootcamp. Basic Portfolio assigment was updated to make site responsive to different viewport sizes using media queries.
