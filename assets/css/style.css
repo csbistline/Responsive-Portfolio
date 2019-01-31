@@ -91,7 +91,7 @@ h2 {
 
 .gallery-labels-container {
     position: absolute;
-    top: 180px;
+    top: 210px;
     display: flex;
     width: 500px;
   
@@ -114,7 +114,6 @@ h2 {
     padding: 10px;
     background-color: #4aaaa5;
     color: #ffffff;
-    /* margin: auto; */
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
@@ -164,4 +163,85 @@ footer {
     font-size: x-small;
     color: #ffffff;
     border-top: 8px solid #4aaaa5;
+}
+
+/* Screen width 980px */
+
+@media screen and (max-width: 980px) {
+    .main-content {
+        width: 768px;
+    }
+    .wrapper2 {
+        width: 768px;
+    }
+}
+
+
+
+/* Screen width 768px */
+
+@media screen and (max-width: 768px) {
+    .wrapper2 {
+        width: 640px;
+    }
+  
+    .main-content {
+        width: 640px;
+    }
+}
+
+
+
+/* Screen width 640px   */
+
+@media screen and (max-width: 640px) {
+    .wrapper2 {
+        position: relative;
+        display: flex;
+        width: 100%;
+      /* Then we define the flow direction 
+         and if we allow the items to wrap 
+       * Remember this is the same as:
+       * flex-direction: row;
+       * flex-wrap: wrap;
+       */
+      flex-flow: row wrap;
+      
+      /* Then we define how is distributed the remaining space */
+      justify-content: flex-start;
+    }
+    .wrapper {
+        border-bottom: 0px;
+        margin-bottom: 0px;
+    }
+    header {
+        width: 100%;
+        text-align: center;
+    }
+    nav {
+       padding: .5rem;
+       width: 100%;
+       text-align: center;
+       border-bottom: 2px solid #cccccc;
+    }
+    .main-content {
+        width: 90%;
+        margin-top: 80px;
+    }
+    #profile-pic {
+        float: none;
+        width: 100%;
+    }
+    
+    .gallery-labels-container {
+        width: 300px;
+    }
+
+    .gallery-images-container {
+        width: 300px;
+    }
+
+    .gallery-labels {
+        margin: 170px 40px 18px 10px;    
+    }
 }
